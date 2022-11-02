@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&family=Roboto:wght@700;900&display=swap')
+
+*
+  position: relative
+  -webkit-font-smoothing: antialiased
+  box-sizing: border-box
+
+html
+  font-size: calc(16px * 10 / 16)
+  // 防止 Bootstrap 預設影響 GoTop
+  scroll-behavior: auto !important
+  +media(lg)
+    font-size: calc(15px * 10 / 16)
+  +media(ipad)
+    font-size: calc(14px * 10 / 16)
+
+body
+  margin: 0
+  background-image: url('../img/bg-dots.png')
+  background-color: $color-gray-mid
+  font-family: $font-primary
+  font-size: 1.6rem
+  font-weight: 400
+  letter-spacing: 0.1rem
+  line-height: 1.7
+  color: $color-gray-light
+  transition: background-color 1s
+  &.is-news-active
+    background-color: $color-primary
+    background-image: none
+
+/* ----------------------------------- */
+/* ------ Reset ------ */
+/* ----------------------------------- */
+
+a
+  display: block
+  text-decoration: none
+  color: inherit
+  &:hover
+    color: inherit
+
+img
+  max-width: 100%
+  
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+/* ----------------------------------- */
+/* ------ Layouts ------ */
+/* ----------------------------------- */
+
+section
+  padding: 0 4vw
+
+.container
+  max-width: 1560px

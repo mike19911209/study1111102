@@ -1,0 +1,51 @@
+h1, h2, h3, h4
+  font-weight: 500
+h1, h2, h3, h4, p
+  margin: 0
+span
+  display: block
+  &.--inline
+    display: inline
+i
+  font-size: 2.4rem
+
+.u-mb-30
+  margin-bottom: 3rem
+.u-mt-30
+  margin-top: 3rem
+
+.u-title-section
+  font-family: $font-en
+  font-size: 7rem
+  font-weight: 900
+  color: $color-secondary
+  
+.u-subtitle-section
+  font-size: 2rem
+
+// 鏤空文字
+.u-title
+  font-size: 3.2rem
+  font-weight: 900
+  -webkit-text-stroke: 2px $color-gray-light
+  // color 透明
+  color: transparent
+  &.--lg
+    font-size: 5rem
+
+.u-title-item
+  font-size: 1.8rem
+  font-weight: 700
+
++media(lg)
+  .u-title.--lg
+    font-size: 4.5rem
+
++media(xs)
+  .u-title-section
+    font-size: 5rem
+  .u-subtitle-section
+    font-size: 1.6rem
+  .u-title
+    font-size: 2.8rem
+    -webkit-text-stroke: 1.5px $color-gray-light

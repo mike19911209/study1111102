@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    include includes/_head.pug
+    title 【專案實作】Megaport Festival 大港開唱 2021
+  body
+    include includes/_navbar.pug
+    
+    header.l-header-inner(data-aos="fade-down")
+      .c-blockade.l-header-inner__blockade
+        .c-blockade__line
+          //- viewport 完成位置 / easing 延遲
+          .c-blockade__text(uk-parallax="viewport: 0.9; x: 70vw,0,-110vw") 台灣最生猛海派的音樂祭 - 大港開唱
+        .c-blockade__line
+          .c-blockade__text(uk-parallax="viewport: 0.8; x: -50vw,0,100vw") 台灣最生猛海派的音樂祭 - 大港開唱
+        .c-blockade__line
+          .c-blockade__text(uk-parallax="viewport: 0.8; easing: 1.5; x: 100vw,-40vw,-60vw") 台灣最生猛海派的音樂祭 - 大港開唱
+        .c-blockade__line
+          .c-blockade__text(uk-parallax="viewport: 0.7; x: -100vw,50vw,90vw") 台灣最生猛海派的音樂祭 - 大港開唱
+
+      h2.u-title.--lg.l-header-inner__title MAP
+
+    main
+      section.l-map
+        .container
+          .row
+            .col-12
+              .l-map__wrap
+                iframe.l-map__google(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7365.939589182923!2d120.27457571336743!3d22.617603103838427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05ef92e80f25%3A0xf795aa6f20cacb0f!2z6auY6ZuE5riv5aSn5riv5qmL!5e0!3m2!1szh-TW!2stw!4v1667221122722!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+
+    include includes/_footer.pug
+    include includes/_scripts.pug 
